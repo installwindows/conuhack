@@ -4,6 +4,7 @@ from skimage import data, img_as_float
 from skimage.measure import compare_ssim
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
+from sklearn.decomposition import PCA
 
 #return numpy array of the image
 def load_image(infilename, width, height ) :
@@ -13,11 +14,9 @@ def load_image(infilename, width, height ) :
     data = img_as_float(img)
     return data
 
-im1 = load_image("a.jpeg", 300, 200)
-im2 = load_image("b.jpeg", 300, 200)
+def comparerDeuxImages(im1, im2, pcaPourcentage):
+    model = PCA()
+    pca1 = model.fit(im1.flatten())
+    pca2 = model.fit(im2.flatten())
 
-plt.figure()
-plt.imshow(im2)
-plt.show()
-
-print(compare_ssim(im1, im2, multichannel=True))
+    return compare_ssim(im1, im2, multichannel=True)
