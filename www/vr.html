@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+		<script src="modules/aframe-gamepad-controls/dist/aframe-gamepad-controls.js"></script>
 	</head>
 	<body>
 		<a-scene>
@@ -26,6 +27,7 @@
 			<a-plane height="6" width="4" material="src: #pepe_grenouille;" position="11.2 4.5 -19.99"></a-plane>
 			<a-plane height="6" width="4" material="src: #pepe01;" position="0 4.5 -19.99"></a-plane>
 			<a-plane height="4" width="6" material="src: #jeb;" position="-11.2 4.5 -19.99"></a-plane>
+			<a-entity camera gamepad-controls></a-entity>
 		</a-scene>
 	</body>
 </html>
