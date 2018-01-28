@@ -2,8 +2,6 @@ from PIL import Image
 import numpy as np
 from skimage import data, img_as_float
 from skimage.measure import compare_ssim
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 from sklearn.decomposition import PCA
 
 #return numpy array of the image
