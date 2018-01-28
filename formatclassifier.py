@@ -11,9 +11,3 @@ def classifyFormatOfPict(filename):
         return im.resize((int(width*1.5),width), Image.NEAREST)
     else :
         return im.resize((width, int(width*1.5)),Image.NEAREST)
-
-im = classifyFormatOfPict("a.jpg")
-
-plt.figure()
-plt.imshow(im)
-plt.show()
