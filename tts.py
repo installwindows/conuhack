@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Jan 27 21:57:41 2018
-
-@author: eticu
-"""
 
 # coding=utf-8
 from __future__ import print_function
