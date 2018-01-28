@@ -6,10 +6,12 @@
 	<body>
 		<a-scene>
 			<a-assets>
+				<video id="trololo" autoplay loop="true" src="trololo.mp4"></video>
 				<img id="wall" src="assets/the_wall.jpg">
 				<img id="floor" src="assets/floor.jpg">
 				<img id="ceiling" src="assets/ceiling.jpg">
 
+				<img id="ayy" src="pepekalei.gif">
 				<img id="orb" src="assets/orb.png">
 				<img id="jeb" src="assets/jeb.jpg">
 				<img id="pepe_grenouille" src="assets/pepe_grenouille.jpg">
@@ -32,6 +34,9 @@
 			<!--right wall -->
 			<a-plane height="6" width="4" material="src: #keksikus;" position="-19.99 4.5 0" rotation="0 90 0"></a-plane>
 			<a-plane height="4" width="6" material="src: #harold;" position="-19.99 4.5 -11.2" rotation="0 90 0"></a-plane>
+			<!-- Back wall -->
+			<a-plane height="6" width="4" material="src: #ayy;" position="11.2 4.5 19.99" rotation="0 180 0"></a-plane>
+			<a-video src="#trololo" width="16" height="9" position="0 4 20"></a-video>
 			<a-entity look-controls camera gamepad-controls position="0 2 0"></a-entity>
 		</a-scene>
 	</body>
