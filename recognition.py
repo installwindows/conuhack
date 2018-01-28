@@ -9,6 +9,6 @@ with open('./frog.jpg', 'rb') as images_file:
     classes = visual_recognition.classify(
         images_file,
         parameters=json.dumps({
-            'classifier_ids': ['food']
+            'classifier_ids': ["Memes_1981654798"]
         }))
 print(json.dumps(classes, indent=2))
