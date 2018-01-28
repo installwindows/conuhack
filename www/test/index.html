@@ -1,15 +1,15 @@
 <html>
 	<head>
 		<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
-		<script src="modules/aframe-gamepad-controls/dist/aframe-gamepad-controls.js"></script>
+		<script src="../modules/aframe-gamepad-controls/dist/aframe-gamepad-controls.js"></script>
 	</head>
 	<body>
 		<a-scene>
 			<a-assets>
 				<img id="pepe_grenouille" src="test.jpg">
 			</a-assets>
-			<a-entity camera gamepad-controls></a-entity>
 			<a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" material="shader: flat; src: #pepe_grenouille"></a-sphere>
+			<a-entity camera gamepad-controls></a-entity>
 		</a-scene>
 	</body>
 </html>
